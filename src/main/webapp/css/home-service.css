@@ -1,0 +1,62 @@
+@charset "UTF-8";
+main .list-service .row .col-sm-4{
+    position: relative;
+    padding: 10px;
+}
+
+main .list-service .row .col-sm-4 img{
+    position: relative;
+    background-color: #f8c6b5;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 0;
+}
+main .list-service .row .col-sm-4 .price{
+    position: absolute;
+    background-color: rgba(86, 66, 50, 0.5); 
+    top: 0;/* 50% trong suốt */
+    min-height: 100%;
+    width: 100%;
+    left: 0;
+    padding-top: 40px;
+    z-index: 2;
+    display: none;
+}
+main .list-service .row .col-sm-4 img:hover~.price{
+    display: block;
+}
+main .list-service .row .col-sm-4 .price:hover{
+    display: block;
+}
+.col-sm-4 .btn-custom{
+    background-color: #f8c6b5;
+}
+div.feedback .row .col-sm-3 img{
+    height: 350px;
+    border-radius: 10px;
+}
+footer{
+    background: #f8c6b5;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-custom2{
+    background: #564232;
+    color: #f8c6b5;
+}
+.btn-custom2:hover{
+    background-color: wheat;
+}
+@media screen and (max-width: 900px) {
+    main .feedback{
+        display: none;
+    }
+    footer{
+        display: inline-block;
+        width: 100%;
+    }
+    footer .location ul{
+        list-style-type: none;
+    }
+}

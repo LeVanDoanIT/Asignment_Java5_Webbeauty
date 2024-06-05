@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+nav .menu .animation {
+	position: absolute;
+	height: 50px;
+	top: 30%;
+	z-index: -1;
+	background: #564232;
+	width: 120px;
+	border-radius: 5px;
+	transition: all 0.5s ease 0s;
+	display: none;
+}
+
+a:nth-child(1) {
+	width: 120px;
+}
+
+nav .menu .start-trangchu, a:nth-child(1):hover ~ .animation {
+	width: 120px;
+	left: 0;
+	display: block;
+}
+
+a:nth-child(2) {
+	width: 120px;
+}
+
+nav .menu .start-gioithieu, a:nth-child(2):hover ~ .animation {
+	width: 120px;
+	left: 120px;
+	display: block;
+}
+
+a:nth-child(3) {
+	width: 100px;
+}
+
+nav .menu .start-dichvu, a:nth-child(3):hover ~ .animation {
+	width: 100px;
+	left: 240px;
+	display: block;
+}
+
+a:nth-child(4) {
+	width: 100px;
+}
+
+nav .menu .start-datlich, a:nth-child(4):hover ~ .animation {
+	width: 100px;
+	left: 340px;
+	display: block;
+}
+
+a:nth-child(5) {
+	width: 110px;
+}
+
+nav .menu .start-taikhoan, a:nth-child(5):hover ~ .animation {
+	width: 110px;
+	left: 440px;
+	display: block;
+}
+
+main h2 {
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+	main h2 {
+		display: block;
+	}
+	main .row {
+		display: none;
+	}
+	main table {
+		display: none;
+	}
+}
