@@ -8,16 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+<main class="container-fluid mt-4 bg-light">
 	<form class="row" action="">
+	<a type="button" href="/manage/user"
+				class="btn btn-warning col-sm-1 h-50">Làm mới</a>
 		<div class="mb-3 col-3">
 			<input type="number" class="form-control"
 				name="" id="phone" aria-describedby="helpId"
 				placeholder="Tìm theo số điện thoại khách hàng" />
 		</div>
-		<div class="mb-3 col-1">
-			<button onclick="timSDT()" type="button" class="btn btn-primary">
-				Tìm kiếm</button>
-		</div>
+		<a type="button" href="/manage/user"
+				class="btn btn-primary col-sm-1 h-50">Tìm SDT</a>
 		<div class="mb-3 col-3">
 			<input type="text" class="form-control" name="" id="name"
 				aria-describedby="helpId" placeholder="Tìm theo tên khách hàng" />
@@ -58,5 +59,6 @@
 		window.location.href = "http://localhost:8080/manage/user/timkiem?phone="+phone;
 	}
 	</script>
+</main>
 </body>
 </html>

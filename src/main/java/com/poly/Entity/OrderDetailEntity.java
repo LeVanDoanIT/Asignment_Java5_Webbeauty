@@ -13,18 +13,18 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "OrderDetails")
-public class OrderDetailEntity implements Serializable {
+@Table(name = "Orderdetails")
+public class OrderdetailEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "Id")
-	private int id;
+	private Integer id;
 	@Column(name = "Quantity")
 	private int quantity;
 	@Column(name = "Total")
 	private int total;
 	@ManyToOne
-	@JoinColumn(name = "ProductId")
+	@JoinColumn(name = "Productid")
 	ProductEntity product;
 	@ManyToOne
 	@JoinColumn(name = "OrderID")

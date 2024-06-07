@@ -20,17 +20,17 @@ import lombok.Data;
 public class ServiceEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="ServiceID")
+	@Column(name="Serviceid")
 	private Integer id;	
 	@Column(name="Images")
 	private String images;
-	@Column(name="ServiceName")
+	@Column(name="Service_name")
 	private String service_name;
 	@Column(name="Description")
 	private String descript;
-	@Column(name="WorkTime")
-	private String work_time;
-	@Column(name="TypeService")
+	@Column(name="Work_time")
+	private Integer work_time;
+	@Column(name="Type_service")
 	private String type_service;
 	@OneToMany(mappedBy = "service")
 	List<ProcessEntity> process;

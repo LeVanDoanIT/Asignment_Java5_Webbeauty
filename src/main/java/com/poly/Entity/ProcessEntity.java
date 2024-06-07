@@ -22,10 +22,10 @@ public class ProcessEntity implements Serializable {
 	private Integer id;
 	@Column(name="Priority")
 	private Integer priority;
-	@Column(name="ProcessName")
+	@Column(name="Process_name")
 	private String process_name;
 	@Column(name="Description")
-	private Integer description;
+	private String description;
 	@ManyToOne @JoinColumn(name="ServiceID")
 	ServiceEntity service;
 }

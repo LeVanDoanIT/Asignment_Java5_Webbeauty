@@ -34,16 +34,14 @@ public class ProductEntity implements Serializable {
 	private String descript;
 	@Column(name = "Quantity")
 	private String quantity;
-	@Column(name = "isActive")
+	@Column(name = "isactive")
 	private Boolean isActive;
 	@Column(name = "images")
 	private String images;
 	@ManyToOne
-	@JoinColumn(name = "CategoryID")
+	@JoinColumn(name = "Category")
 	CategoryEnitty category;
 	@ManyToOne
-	@JoinColumn(name = "StaffID")
+	@JoinColumn(name = "Staffid")
 	StaffEntity staff;
-	@OneToMany (mappedBy = "product")
-	List<OrderDetailEntity> orderDetails;
 }

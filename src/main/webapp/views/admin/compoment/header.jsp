@@ -31,7 +31,7 @@
 			<div class="menu">
 				<a href="/manage/user">Khách hàng</a> <a href="/manage/staff">Nhân
 					viên</a> <a href="/manage/service">Dịch vụ</a> <a
-					href="/manage/location">Cơ sở</a> <a href="/manage/booking">Thống kê</a>
+					href="/manage/location">Cơ sở</a> <a href="/manage/statistical">Thống kê</a>
 				<div class="animation start-home"></div>
 			</div>
 			<span id="close-menu-btn" class="material-symbols-outlined"> <img

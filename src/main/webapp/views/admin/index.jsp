@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="../css/index.css" />
 <link rel="stylesheet" href="../css/home-service.css" />
 <link rel="stylesheet" href="../css/admin-managerUser.css" />
+<link rel="stylesheet" href="../css/staff.css" />
 </head>
 <body class="bg-light">
 	<jsp:include page="/views/admin/compoment/header.jsp"></jsp:include>

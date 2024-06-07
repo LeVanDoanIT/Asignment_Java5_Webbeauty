@@ -35,5 +35,5 @@ public class OrderEntity implements Serializable {
 	@JoinColumn(name = "UserID")
 	UserEntity user;
 	@OneToMany(mappedBy = "order")
-	List<OrderDetailEntity> orderDetails;
+	List<OrderdetailEntity> orderDetails;
 }

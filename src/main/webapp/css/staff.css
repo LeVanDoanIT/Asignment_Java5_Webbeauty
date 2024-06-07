@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+main h2 {
+	display: none;
+}
+
+main .row .tabs {
+	position: relative;
+}
+
+main .row .tabs a {
+	padding: 5px;
+	color: #564232;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	z-index: 1;
+	transition: all 0.5s ease 0s;
+}
+
+.staff img {
+	width: 100%;
+	height: fit-content;
+}
+
+main .row .tabs a:hover {
+	border-bottom: 1px solid #564232;
+	color: #f8c6b5;
+}
+
+main .button .btn-primary {
+	width: 200px;
+}
+
+@media screen and (max-width: 900px) {
+	main div.row {
+		display: none;
+	}
+	main h2 {
+		display: block;
+	}
+}
